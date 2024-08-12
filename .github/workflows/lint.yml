@@ -17,7 +17,7 @@ jobs:
           node-version: "20.x"
 
       - name: Install ESLint
-        run: npm install -g eslint
+        run: npm install @eslint/js --save-dev
       
       - name: Run ESLint with recommended rules
         run: eslint .
