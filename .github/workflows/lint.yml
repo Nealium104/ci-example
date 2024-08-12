@@ -20,4 +20,4 @@ jobs:
         run: npm install -g eslint
       
       - name: Run ESLint with recommended rules
-        run: eslint . --no-eslintrc --rule '{"extends": "eslint:recommended"}'
+        run: eslint . 
