@@ -1,4 +1,4 @@
-name: lint
+name: Lint
 
 on:
   push:
@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: "20.x"
 
-      - name: Install eslint
+      - name: Install ESLint
         run: npm install -g eslint
-
-      - name: Run eslint
-        run: eslint ./
+      
+      - name: Run ESLint with recommended rules
+        run: eslint . --no-eslintrc --rule '{"extends": "eslint:recommended"}'
