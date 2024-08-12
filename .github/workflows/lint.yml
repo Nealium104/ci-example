@@ -18,6 +18,9 @@ jobs:
 
       - name: Install ESLint
         run: npm install @eslint/js --save-dev
+
+      - name: Install globals
+        run: npm install globals
       
       - name: Run ESLint with recommended rules
         run: npx eslint .
